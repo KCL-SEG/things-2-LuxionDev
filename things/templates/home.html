@@ -9,7 +9,7 @@
   <p>Some stuff about things goes here.</p>
   <form action="{% url 'home' %}" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form }}
     <input type="submit" value="Submit">
   </form>
 </body>
